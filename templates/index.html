@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Skybox</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌌 Generador de Skybox</h1>
+        <p class="subtitle">Sube un panorama y genera un skybox automáticamente</p>
+
+        <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
+            <label class="drop-area" id="dropArea">
+                <input type="file" name="image" id="fileInput" hidden required>
+
+                <div id="dropText">
+                    Arrastra y suelta una panorámica aquí<br>
+                    <span>o haz clic para seleccionar</span>
+                </div>
+
+                <img id="preview" alt="">
+            </label>
+
+            <button type="submit" class="generate-btn">
+                Generar Skybox
+            </button>
+        </form>
+
+        <div id="status" style="display:none; margin-top:25px;">
+    <h3 style="color:#7dffb2;">
+        ✔ Skybox generado exitosamente
+    </h3>
+
+    <button id="downloadBtn" class="generate-btn">
+        ⬇ Descargar Pack
+    </button>
+</div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
