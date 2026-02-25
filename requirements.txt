@@ -1,4 +1,0 @@
-Flask
-pywebview
-numpy
-Pillow
