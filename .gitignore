@@ -1,0 +1,20 @@
+# Build artifacts
+_buildtest/
+build/
+dist/
+*.build/
+*.dist/
+*.onefile-build/
+*.exe
+sourcecode.zip
+nuitka-crash-report.xml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated output
+allSkys/
+temp_faces_*/
